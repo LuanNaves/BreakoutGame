@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2631pbhogc5u"]
+
+[ext_resource type="PackedScene" uid="uid://cx8rhwmbhojih" path="res://player/player.tscn" id="1_35ocl"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_35ocl")]
+position = Vector2(576, 620)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
